@@ -43,7 +43,7 @@ namespace EmployeeManagement
                 .ConfigureServices((context, services) =>
                 {
                     string apiKey = context.Configuration.GetValue<string>("API_KEY");
-                    services.AddSingleton<APIClientHelperFactory>(new APIClientHelperFactory("fa114107311259f5f33e70a5d85de34a2499b4401da069af0b1d835cd5ec0d56", "https://gorest1.co.in/public-api/"));
+                    services.AddSingleton<APIClientHelperFactory>(new APIClientHelperFactory("fa114107311259f5f33e70a5d85de34a2499b4401da069af0b1d835cd5ec0d56A", "https://gorest1.co.in/public-api/"));
                     //services.AddSingleton<Export>(new Export(@"C:\Temp\export.csv"));
                     services.AddSingleton<IUserServices, UserManagementServices>();
                     services.AddSingleton<IExport, Export>();
